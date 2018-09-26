@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
+import { NavController, AlertController} from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 
@@ -9,12 +9,10 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
-  invalid:boolean = false;
   bamaId:string = '';
   password:string = '';
 
   constructor(public navCtrl: NavController,  public alertCtrl: AlertController) {
-
   }
 
   login(){

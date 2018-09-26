@@ -1,25 +1,17 @@
 <ion-content padding center text-center>
-  <ion-title> <img width="166" height="137" src='../../assets/imgs/logo.png'> </ion-title>
-    <div *ngIf="!invalid">
-      <ion-item>
-        <ion-input type="text" placeholder="Bama ID" [(ngModel)]="bamaId"></ion-input>
-      </ion-item>
+    <ion-title>
+      Welcome!
+    </ion-title>
 
-      <ion-item>
-        <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
-      </ion-item>
-    </div>
+    <ion-item>
+      <ion-input type="text" placeholder="Bama ID" [(ngModel)]="bamaId"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+    </ion-item>
 
-    <div *ngIf="invalid">
-      <ion-item>
-        <ion-input type="text" placeholder="Invalid BamaID" [(ngModel)]="bamaId"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-input type="password" placeholder="Invalid Password" [(ngModel)]="password"></ion-input>
-      </ion-item>
-    </div>
-
-    <button ion-button color="primary" full (click)="login()">Login</button>
+  <button ion-button color="primary" full (click)="login()">
+    Login
+  </button>
 
 </ion-content>
