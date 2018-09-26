@@ -31,7 +31,17 @@ export class LoginPage {
         return;
       }
 
-    else if(this.bamaId === 'nlsaban' && this.password === 'rolltide'){
+    else if(this.bamaId !== 'nlsaban' || this.password !== 'rolltide'){
+        let alert = this.alertCtrl.create({
+          title:'Login Error',
+          subTitle:'Invalid credentials',
+          buttons:['OK']
+        });
+        alert.present();
+        return;
+      }
+
+    else{
       this.navCtrl.push(HomePage);
     }
   }
