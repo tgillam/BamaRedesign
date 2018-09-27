@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, AlertController} from 'ionic-angular';
 
 import { HomePage } from '../home/home';
+import { HomePage2 } from '../home2/home2';
 
 @Component({
   selector: 'page-login',
@@ -42,5 +43,9 @@ export class LoginPage {
     else{
       this.navCtrl.push(HomePage);
     }
+  }
+
+  notStudent(){
+    this.navCtrl.push(HomePage2);
   }
 }

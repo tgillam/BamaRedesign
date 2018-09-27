@@ -4,4 +4,11 @@ page-login {
     margin-top: 10vh;
     margin-bottom: 5vh;
   }
+
+  a {
+    color: secondary;
+  }
+  a:hover {
+    color: primary;
+  }
 }

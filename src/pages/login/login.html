@@ -1,17 +1,22 @@
 <ion-content padding center text-center>
-    <ion-title>
-      Welcome!
-    </ion-title>
+  <ion-title>
+    Welcome!
+  </ion-title>
 
-    <ion-item>
-      <ion-input type="text" placeholder="Bama ID" [(ngModel)]="bamaId"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
-    </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Bama ID" [(ngModel)]="bamaId"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  </ion-item>
 
   <button ion-button color="primary" full (click)="login()">
     Login
   </button>
+
+  <br>
+  <a full (click)="notStudent()">
+  Not a student?
+  </a>
 
 </ion-content>
