@@ -41,11 +41,13 @@ export class LoginPage {
       }
 
     else{
-      this.navCtrl.push(HomePage);
+      this.navCtrl.setRoot(HomePage);
+      this.navCtrl.popToRoot();
     }
   }
 
   notStudent(){
-    this.navCtrl.push(HomePage2);
+    this.navCtrl.setRoot(HomePage2);
+    this.navCtrl.popToRoot();
   }
 }
