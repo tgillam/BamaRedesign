@@ -6,15 +6,24 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { HomePage2 } from '../pages/home2/home2';
+import { CampusMap } from '../pages/campus-map/campus-map';
+import { Student } from '../pages/student/student';
+import { CourseCatalog } from '../pages/course-catalog/course-catalog';
+import { Emergency } from '../pages/emergency/emergency';
+import { Transportation } from '../pages/transportation/transportation';
+import { CampusDirectory } from '../pages/campus-directory/campus-directory';
+import { Laundry } from '../pages/laundry/laundry';
+import { Events } from '../pages/events/events';
+import { Links } from '../pages/links/links';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  
+
   rootPage:any = LoginPage;
-  
+
   pages: Array<{title: string, component: any}>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -26,12 +35,21 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Home', component: HomePage2 }
+      { title: 'Home', component: HomePage2 },
+      { title: 'Campus Map', component: CampusMap },
+      { title: 'Student', component: Student },
+      { title: 'Course Catalog', component: CourseCatalog },
+      { title: 'Emergency', component: Emergency },
+      { title: 'Transportation', component: Transportation },
+      { title: 'Campus Directory', component: CampusDirectory },
+      { title: 'Laundry', component: Laundry },
+      { title: 'Events', component: Events },
+      { title: 'Links', component: Links }
     ];
   }
-  
+
   openPage(page) {
     this.nav.setRoot(page.component);
   }
-  
+
 }

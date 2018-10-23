@@ -8,13 +8,31 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { HomePage2 } from '../pages/home2/home2';
+import { CampusMap } from '../pages/campus-map/campus-map';
+import { Student } from '../pages/student/student';
+import { CourseCatalog } from '../pages/course-catalog/course-catalog';
+import { Emergency } from '../pages/emergency/emergency';
+import { Transportation } from '../pages/transportation/transportation';
+import { CampusDirectory } from '../pages/campus-directory/campus-directory';
+import { Laundry } from '../pages/laundry/laundry';
+import { Events } from '../pages/events/events';
+import { Links } from '../pages/links/links';
 
 @NgModule({
   declarations: [
     MyApp,
     LoginPage,
     HomePage,
-    HomePage2
+    HomePage2,
+    CampusMap,
+    Student,
+    CourseCatalog,
+    Emergency,
+    Transportation,
+    CampusDirectory,
+    Laundry,
+    Events,
+    Links
   ],
   imports: [
     BrowserModule,
@@ -25,7 +43,16 @@ import { HomePage2 } from '../pages/home2/home2';
     MyApp,
     LoginPage,
     HomePage,
-    HomePage2
+    HomePage2,
+    CampusMap,
+    Student,
+    CourseCatalog,
+    Emergency,
+    Transportation,
+    CampusDirectory,
+    Laundry,
+    Events,
+    Links
   ],
   providers: [
     StatusBar,
