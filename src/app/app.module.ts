@@ -17,6 +17,8 @@ import { CampusDirectory } from '../pages/campus-directory/campus-directory';
 import { Laundry } from '../pages/laundry/laundry';
 import { Events } from '../pages/events/events';
 import { Links } from '../pages/links/links';
+import { News } from '../pages/news/news';
+import { Article1Page } from '../pages/news/articles/article1';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { Links } from '../pages/links/links';
     CampusDirectory,
     Laundry,
     Events,
-    Links
+    Links,
+    News,
+    Article1Page
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,9 @@ import { Links } from '../pages/links/links';
     CampusDirectory,
     Laundry,
     Events,
-    Links
+    Links,
+    News,
+    Article1Page
   ],
   providers: [
     StatusBar,

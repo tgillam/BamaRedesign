@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="black"></ion-icon>
+    </button>
+    
+    <button end ion-button menuToggle>
+      <ion-icon name="contact" color="black"></ion-icon>
+    </button>
+
+    <ion-title>
+      <img width="45" height="45" src='../../assets/imgs/logo2.png'>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides autoplay="4000" loop="true" speed="500" centeredSlides="true">
+    <ion-slide *ngFor="let slide of slidesInfo">
+      <button no-padding (click)="openArticle()">
+      <div class="container">
+        <img [src]="slide.image"/>
+        <div class="slide-arrow-right">
+          <ion-icon name="arrow-dropright-circle"></ion-icon>
+        </div>
+        <div class="slide-arrow-left">
+          <ion-icon name="arrow-dropleft-circle"></ion-icon>
+        </div>
+        <div class="text-block">
+          <h4 class="slide-h4" [innerHTML]="slide.heading"></h4>
+          <p class="slide-p" [innerHTML]="slide.paragraph"></p>
+        </div>
+      </div>
+    </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
