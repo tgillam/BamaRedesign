@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
-import { Article1Page } from './articles/article1'
+import { Article1Page } from './articles/article1';
+import { Article2Page } from './articles/article2';
+import { Article3Page } from './articles/article3';
 
 /**
  * Generated class for the NewsPage page.
@@ -56,7 +58,18 @@ export class News {
   }
   
   openArticle() {
-    this.navCtrl.push(Article1Page);
+    var currentSlide = this.slides.getActiveIndex();
+    console.log('Opening article with index ' + currentSlide);
+    if(currentSlide == 1) {
+      this.navCtrl.push(Article1Page);
+    }
+    else if(currentSlide == 2) {
+      this.navCtrl.push(Article2Page);
+    }
+    else {
+      this.navCtrl.push(Article3Page);
+    }
+    //this.navCtrl.push(Article1Page);
   }
   
   /**nextSlide(speed) {

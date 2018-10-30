@@ -19,6 +19,8 @@ import { Events } from '../pages/events/events';
 import { Links } from '../pages/links/links';
 import { News } from '../pages/news/news';
 import { Article1Page } from '../pages/news/articles/article1';
+import { Article2Page } from '../pages/news/articles/article2';
+import { Article3Page } from '../pages/news/articles/article3';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { Article1Page } from '../pages/news/articles/article1';
     Events,
     Links,
     News,
-    Article1Page
+    Article1Page,
+    Article2Page,
+    Article3Page
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,9 @@ import { Article1Page } from '../pages/news/articles/article1';
     Events,
     Links,
     News,
-    Article1Page
+    Article1Page,
+    Article2Page,
+    Article3Page
   ],
   providers: [
     StatusBar,

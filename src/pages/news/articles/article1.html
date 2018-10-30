@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton="true">
 
     <button ion-button menuToggle>
       <ion-icon name="menu" color="black"></ion-icon>
@@ -50,3 +50,15 @@ Culverhouse’s Marillyn A. Hewson Data Analytics Lab will be one of the learnin
 
 <br><br>For more information, contact Jan Jones, director of specialized master’s programs at 205-348-7221 or jjones@culverhouse.ua.edu.</p>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons start>
+      <div class="footer-back">
+        <button ion-button icon-only color="black" (click)="goBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

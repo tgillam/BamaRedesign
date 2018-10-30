@@ -16,7 +16,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content no-bounce>
+<ion-content no-bounce no-padding>
   <ion-slides #slides autoplay="4000" loop="true" speed="500" centeredSlides="true">
     <ion-slide *ngFor="let slide of slidesInfo">
       <button no-padding (click)="openArticle()">
