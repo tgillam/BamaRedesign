@@ -3,19 +3,17 @@
     <button ion-button menuToggle>
       <ion-icon name="menu" color="black"></ion-icon>
     </button>
-
     <button end ion-button menuToggle>
       <ion-icon name="contact" color="black"></ion-icon>
     </button>
-
-    <ion-title (click)="goToPage()">
+    <ion-title>
       <img width="45" height="45" src='../../assets/imgs/logo2.png'>
     </ion-title>
-
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content no-bounce>
+
   <ion-slides autoplay="5000" loop="true" speed="500">
     <ion-slide style="width:100%">
       <img src='../../assets/imgs/event1.jpg'>
@@ -27,4 +25,46 @@
       <img src='../../assets/imgs/news2.jpg'>
     </ion-slide>
   </ion-slides>
+
+  <header>
+    <div class="white-space">
+      <font size="5px" color="white"></font>
+    </div>
+
+    <div class="bar bar-subheader1">
+      <font size="5px" color="white">My Tickets</font>
+    </div>
+
+    <div class="white-space">
+      <font size="5px" color="white"></font>
+    </div>
+
+    <div class="bar bar-subheader3">
+      <font size="5px" color="white">Action Card</font>
+    </div>
+
+    <div class="white-space">
+      <font size="5px" color="white"></font>
+    </div>
+
+    <div class="white-space">
+      <font size="5px" color="white"></font>
+    </div>
+  </header>
+
+    <div class="ticket-box">
+      <img width="90%" src='../../assets/imgs/ticket.png' alt="Ticket">
+      <b><br><br>Alabama Vs. Tennessee<br></b>
+      <b>Lower Bowl - Gate 31</b>
+    </div>
+
+    <div class="white-space">
+      <font size="5px" color="white"></font>
+    </div>
+
+    <div class="action-box">
+      <font> <b>Bama Cash:</b> $35.00<br></font>
+      <font> <b>Dining Dollars:</b> $151.47</font>
+    </div>
+
 </ion-content>

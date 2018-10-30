@@ -1,4 +1,5 @@
 page-home {
+  background-color: white;
 
   ion-navbar{
     .toolbar-background {
@@ -16,13 +17,65 @@ page-home {
     }
   }
 
+  ion-content {
+      text-align: center;
+  }
+
   ion-slides.slides {
     height: auto;
     width: 100% !important;
   }
 
-  ion-content {
-      text-align: center;
+  header{
+    .bar.bar-subheader1 {
+      height: 50px;
+      width: 45%;
+      text-align: middle;
+      background-color: #800020;
+      float: left;
+      padding: 2.5%;
+      border: 2px solid black;
+      border-bottom: none;
+    }
+
+    .bar.bar-subheader3 {
+      height: 50px;
+      width: 45%;
+      text-align: middle;
+      background-color: #800020;
+      float: left;
+      padding: 2.5%;
+      display: inline;
+      border: 2px solid black;
+      border-bottom: none;
+    }
   }
-  background-color: white;
+
+  .white-space {
+    height: 50px;
+    text-align: middle;
+    background-color: white;
+    float: left;
+    padding: 1.5%;
+    display: inline;
+  }
+
+  .ticket-box{
+      font-size: 55%;
+      float: left;
+      width: 45%;
+      height: 21%;
+      padding: 3%;
+      border: 2px solid black;
+    }
+
+  .action-box{
+      text-align: left;
+      font-size: 100%;
+      float: left;
+      width: 45%;
+      height: 21%;
+      padding: 3%;
+      border: 2px solid black;
+    }
 }
