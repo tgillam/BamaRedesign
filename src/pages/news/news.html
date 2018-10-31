@@ -16,24 +16,16 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content no-bounce no-padding>
-  <ion-slides #slides autoplay="4000" loop="true" speed="500" centeredSlides="true">
-    <ion-slide *ngFor="let slide of slidesInfo">
-      <button no-padding (click)="openArticle()">
-      <div class="container">
-        <img [src]="slide.image"/>
-        <div class="slide-arrow-right">
-          <ion-icon name="arrow-dropright-circle"></ion-icon>
+<ion-content no-bounce>
+  <div class="slides-header">
+    <ion-slides #slides autoplay="4000" loop="true" speed="500" centeredSlides="true">
+      <ion-slide style="width:100%" *ngFor="let slide of slidesInfo">
+        <img [src]="slide.image" (click)="openArticle()"/>
+        <div class="slides-text">
+          <h4 class="article-header" [innerHTML]="slide.heading"></h4>
+          <p class="article-paragraph" [innerHTML]="slide.paragraph"></p>
         </div>
-        <div class="slide-arrow-left">
-          <ion-icon name="arrow-dropleft-circle"></ion-icon>
-        </div>
-        <div class="text-block">
-          <h4 class="slide-h4" [innerHTML]="slide.heading"></h4>
-          <p class="slide-p" [innerHTML]="slide.paragraph"></p>
-        </div>
-      </div>
-    </button>
-    </ion-slide>
-  </ion-slides>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>

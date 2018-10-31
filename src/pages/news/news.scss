@@ -20,55 +20,30 @@ page-news {
       text-align: center;
   }
   
-  ion-slides {
-    height: 200px;
+  ion-slides.slides {
+    height: auto;
+    width: 100% !important;
   }
   
-  button {
-    max-height: 100%;
-    max-width: 100%;
-    margin: 18px 0;
-  }
-  
-  .container {
+  .slides-header {
     position: relative;
   }
   
-  .slide-h4 {
+  .article-header {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: left;
   }
   
-  .slide-p {
+  .article-paragraph {
     font-size: 15px;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: left;
   }
   
-  img {
-    position: relative;
-  }
-  
-  .slide-arrow-right {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    color: white;
-    font-size: 30px;
-  }
-  
-  .slide-arrow-left {
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    color: white;
-    font-size: 30px;
-  }
-  
-  .text-block {
+  .slides-text {
     position: absolute;
     bottom: 0;
     left: 20px;
