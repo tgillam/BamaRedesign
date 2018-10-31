@@ -18,9 +18,9 @@
 
 <ion-content no-bounce>
   <div class="slides-header">
-    <ion-slides #slides autoplay="4000" loop="true" speed="500" centeredSlides="true">
+    <ion-slides (ionSlideTap)="openArticle()" #slides autoplay="4000" loop="true" speed="500" centeredSlides="true">
       <ion-slide style="width:100%" *ngFor="let slide of slidesInfo">
-        <img [src]="slide.image" (click)="openArticle()"/>
+        <img [src]="slide.image"/>
         <div class="slides-text">
           <h4 class="article-header" [innerHTML]="slide.heading"></h4>
           <p class="article-paragraph" [innerHTML]="slide.paragraph"></p>

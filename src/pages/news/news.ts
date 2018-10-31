@@ -69,31 +69,6 @@ export class News {
     else {
       this.navCtrl.push(Article3Page);
     }
-    //this.navCtrl.push(Article1Page);
   }
-  
-  /**nextSlide(speed) {
-    var currentIndex = this.slides.getActiveIndex();
-    console.log('Active index is ' + currentIndex);
-    var slideShowLength = this.slidesInfo.length;
-    var destination = currentIndex + 1;
-    if (currentIndex == slideShowLength - 1) {
-      destination = 0;
-    }
-    this.slides.slideTo(destination,speed);
-    //this.slides.slideNext(speed);
-  }
-
-  prevSlide(speed) {
-    var currentIndex = this.slides.getActiveIndex();
-    console.log('Active index is ' + currentIndex);
-    var slideshowLength = this.slidesInfo.length;
-    var destination = slideshowLength - 1;
-    if (currentIndex != 0) {
-      destination = currentIndex - 1;
-    }
-    this.slides.slideTo(destination,speed);
-    //this.slides.slidePrev(speed);
-  }*/
 
 }
