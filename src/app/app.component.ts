@@ -15,6 +15,7 @@ import { CampusDirectory } from '../pages/campus-directory/campus-directory';
 import { Laundry } from '../pages/laundry/laundry';
 import { Events } from '../pages/events/events';
 import { Links } from '../pages/links/links';
+import { News } from '../pages/news/news';
 
 @Component({
   templateUrl: 'app.html'
@@ -44,7 +45,8 @@ export class MyApp {
       { title: 'Campus Directory', component: CampusDirectory },
       { title: 'Laundry', component: Laundry },
       { title: 'Events', component: Events },
-      { title: 'Links', component: Links }
+      { title: 'Links', component: Links },
+      { title: 'News', component: News }
     ];
   }
 
