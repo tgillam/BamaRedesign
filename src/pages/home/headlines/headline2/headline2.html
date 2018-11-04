@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="black"></ion-icon>
+    </button>
+
+    <button end ion-button menuToggle>
+      <ion-icon name="contact" color="black"></ion-icon>
+    </button>
+
+    <ion-title (click)="goToPage()">
+      <img width="45" height="45" src='../../../assets/imgs/logo2.png'>
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h1>Career Center News - October</h1>
+  <div class="article-image">
+    <img src="assets/imgs/news1home.png"/>
+  </div>
+  <ion-item style="border-bottom: 1px solid grey">
+    <ion-icon name="calendar"></ion-icon>
+    October 18th, 2018
+  </ion-item>
+  <h3>Your UA Career Center</h3>
+
+  <p>October is a great time to enjoy cooler weather, Alabama football, and all things pumpkin spice. It's also a great time to #ChampionYourCareer. Check out what's coming up from the Career Center!<br></p>
+
+  <h4>Education Interview Day</h4>
+  <p>Wed, Oct 24 8:00 am CDT - 1:30 pm CDT<br>
+    McCorvey Dr, Tuscaloosa, Alabama 35401, United States<br>
+    <li color="#800020">33 employers attending<br></li>
+  <br></p>
+
+  <h4>Getting Into the Sports Game</h4>
+  <p>Thu, Nov 15 6:30 pm CST - 8:00 pm CST<br>
+    Are you serious about pursuing a career in sports? Put on your game face and join us for Going Pro – Getting Into the Sports Game, featuring a panel of experts from ESPN, NCAA, and more.<br>
+  <br></p>
+
+  <h4>Career Chats</h4>
+  <p>
+    The Career Center's Career Chat workshop series is designed to address some of the most common questions held by students entering the job market. Upcoming Career Chat topics include: Handshake 101, Salary Negotiation, and Holiday Etiquette.<br>
+  <br></p>
+
+  <h4>Upcoming Application Deadlines</h4>
+  <p><b>Southwest Airlines Internships Summer 2019<br></b>
+    Southwest Airlines<br>
+    Seasonal Full-Time Internship, Dallas, TX<br>
+    <li color="#800020">Apply by Friday, Oct 19<br><br></li>
+
+    <b>eBay Finance & Analytics Internships Summer 2019<br></b>
+      eBay<br>
+      Seasonal Full-Time Internship, San Jose, CA<br>
+      <li color="#800020">Apply by Friday, Oct 26<br></li>
+  </p>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons start>
+      <div class="footer-back">
+        <button ion-button icon-only color="black" (click)="goBack()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </button>
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

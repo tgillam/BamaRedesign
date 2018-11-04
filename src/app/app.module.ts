@@ -6,6 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
+import { Headline1Page } from '../pages/home/headlines/headline1/headline1';
+import { Headline2Page } from '../pages/home/headlines/headline2/headline2';
+import { Headline3Page } from '../pages/home/headlines/headline3/headline3';
 import { HomePage } from '../pages/home/home';
 import { HomePage2 } from '../pages/home2/home2';
 import { CampusMap } from '../pages/campus-map/campus-map';
@@ -40,7 +43,10 @@ import { Article3Page } from '../pages/news/articles/article3';
     News,
     Article1Page,
     Article2Page,
-    Article3Page
+    Article3Page,
+    Headline1Page,
+    Headline2Page,
+    Headline3Page
   ],
   imports: [
     BrowserModule,
@@ -64,7 +70,10 @@ import { Article3Page } from '../pages/news/articles/article3';
     News,
     Article1Page,
     Article2Page,
-    Article3Page
+    Article3Page,
+    Headline1Page,
+    Headline2Page,
+    Headline3Page
   ],
   providers: [
     StatusBar,
