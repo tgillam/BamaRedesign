@@ -1,5 +1,6 @@
 page-home {
-  
+  background-color: white;
+
   ion-navbar{
     .toolbar-background {
       background-color: #800020;
@@ -15,8 +16,116 @@ page-home {
     text-align: center;
     }
   }
+
   ion-content {
       text-align: center;
   }
-  background-color: white;
+
+  ion-slides.slides {
+    height: auto;
+    width: 100% !important;
+  }
+
+  header{
+    .bar.bar-subheader1 {
+      font-family: Helvetica;
+      height: 40%;
+      width: 45%;
+      text-align: middle;
+      background-color: #800020;
+      float: left;
+      padding: 2.5%;
+      border: 2px solid black;
+      border-bottom: none;
+      margin-left: 3%;
+    }
+
+    .bar.bar-subheader2 {
+      font-family: Helvetica;
+      height: 40%;
+      width: 45%;
+      text-align: middle;
+      background-color: #800020;
+      float: left;
+      padding: 2.5%;
+      display: inline;
+      border: 2px solid black;
+      border-bottom: none;
+      margin-left: 3%;
+    }
+
+    .bar.bar-subheader3 {
+      font-family: Helvetica;
+      height: 40%;
+      width: 93%;
+      text-align: middle;
+      background-color: #800020;
+      float: left;
+      padding: 2.5%;
+      display: inline;
+      border: 2px solid black;
+      border-bottom: none;
+      margin-left: 3%;
+      margin-top: 2%;
+    }
+  }
+
+  .ticket-box{
+      font-size: 55%;
+      font-family: Helvetica;
+      float: left;
+      width: 45%;
+      height: 21%;
+      padding: 3%;
+      border: 2px solid black;
+      margin-left: 3%;
+    }
+
+  .action-box{
+      text-align: left;
+      font-family: Helvetica;
+      font-size: 100%;
+      float: left;
+      width: 45%;
+      height: 21%;
+      padding: 3%;
+      border: 2px solid black;
+      margin-left: 3%;
+    }
+
+  .news-box{
+      text-align: left;
+      font-family: Helvetica;
+      font-size: 100%;
+      float: left;
+      width: 93%;
+      position: relative;
+      height: 32.75%;
+      border: 2px solid black;
+      margin-left: 3%;
+      margin-bottom: 2%;
+    }
+
+  .bottom-left-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+  .bottom-left-headline {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .news-text {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: white;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
 }
