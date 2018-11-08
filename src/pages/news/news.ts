@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { Article1Page } from './articles/article1';
 import { Article2Page } from './articles/article2';
 import { Article3Page } from './articles/article3';
+import { Article4Page } from './articles/article4';
+import { Article5Page } from './articles/article5';
+import { Article6Page } from './articles/article6';
 
 /**
  * Generated class for the NewsPage page.
@@ -20,7 +23,7 @@ import { Article3Page } from './articles/article3';
 })
 export class News {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
   
   @ViewChild('slides') slides: Slides;
@@ -57,8 +60,18 @@ export class News {
     console.log('ionViewDidLoad NewsPage');
   }
   
-  openArticle() {
-    var currentSlide = this.slides.getActiveIndex();
+  openArticle(index) {
+    console.log('Opening article with index ' + index);
+    if(index == 1) {
+      this.navCtrl.push(Article1Page);
+    }
+    else if(index == 2) {
+      this.navCtrl.push(Article2Page);
+    }
+    else {
+      this.navCtrl.push(Article3Page);
+    }
+    /*var currentSlide = this.slides.getActiveIndex();
     console.log('Opening article with index ' + currentSlide);
     if(currentSlide == 1) {
       this.navCtrl.push(Article1Page);
@@ -68,6 +81,24 @@ export class News {
     }
     else {
       this.navCtrl.push(Article3Page);
+    }*/
+  }
+  
+  openNoSlideArticle(article) {
+    let loading = this.loadingCtrl.create({
+    content: 'Loading...',
+    dismissOnPageChange: true
+    });
+
+    loading.present();
+    if(article == 1) {
+      this.navCtrl.push(Article4Page);
+    }
+    else if(article == 2) {
+      this.navCtrl.push(Article5Page);
+    }
+    else {
+      this.navCtrl.push(Article6Page);
     }
   }
 

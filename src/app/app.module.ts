@@ -21,6 +21,9 @@ import { News } from '../pages/news/news';
 import { Article1Page } from '../pages/news/articles/article1';
 import { Article2Page } from '../pages/news/articles/article2';
 import { Article3Page } from '../pages/news/articles/article3';
+import { Article4Page } from '../pages/news/articles/article4';
+import { Article5Page } from '../pages/news/articles/article5';
+import { Article6Page } from '../pages/news/articles/article6';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { Article3Page } from '../pages/news/articles/article3';
     News,
     Article1Page,
     Article2Page,
-    Article3Page
+    Article3Page,
+    Article4Page,
+    Article5Page,
+    Article6Page
   ],
   imports: [
     BrowserModule,
@@ -64,7 +70,10 @@ import { Article3Page } from '../pages/news/articles/article3';
     News,
     Article1Page,
     Article2Page,
-    Article3Page
+    Article3Page,
+    Article4Page,
+    Article5Page,
+    Article6Page
   ],
   providers: [
     StatusBar,

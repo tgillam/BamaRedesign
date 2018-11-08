@@ -18,6 +18,7 @@ page-news {
   
   ion-content {
       text-align: center;
+      font-family: Helvetica;
   }
   
   ion-slides.slides {
@@ -29,14 +30,14 @@ page-news {
     position: relative;
   }
   
-  .article-header {
+  .slide-article-header {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
     text-align: left;
   }
   
-  .article-paragraph {
+  .slide-article-paragraph {
     font-size: 15px;
     font-weight: bold;
     margin-top: 0;
@@ -50,6 +51,80 @@ page-news {
     color: white;
     padding-left: 5px;
     padding-right: 5px;
+  }
+  
+  .top-stories-text {
+    float: left;
+    width: 60%;
+  }
+  
+  .top-stories-image1 {
+    float: left;
+    width: 40%;
+    background-image: url('../../assets/imgs/news4.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .top-stories-image2 {
+    float: left;
+    width: 40%;
+    background-image: url('../../assets/imgs/news5.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .top-stories-image3 {
+    float: left;
+    width: 40%;
+    background-image: url('../../assets/imgs/news6.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .top-stories-button {
+    display: flex;
+  }
+  
+  .top-stories-button:active {
+    background-color: #E8E8E8;
+  }
+  
+  .top-stories {
+    margin: 5px;
+    border: thin solid black;
+  }
+  
+  hr {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #top-stories-header {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  #top-article-header {
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin-top: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  
+  #top-article-par {
+    font-size: 15px;
+    font-weight: bold;
+    color: color($colors, secondary);
+    text-align: left;
+    margin-bottom: 0;
+    padding-left: 5px;
   }
   background-color: white;
 }
