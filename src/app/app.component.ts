@@ -4,6 +4,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
+import { Headline1Page } from '../pages/home/headlines/headline1/headline1';
+import { Headline2Page } from '../pages/home/headlines/headline2/headline2';
+import { Headline3Page } from '../pages/home/headlines/headline3/headline3';
 import { HomePage } from '../pages/home/home';
 import { HomePage2 } from '../pages/home2/home2';
 import { CampusMap } from '../pages/campus-map/campus-map';
